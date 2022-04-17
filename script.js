@@ -1,5 +1,6 @@
 const adviceTitle = document.getElementsByClassName("advice-title")[0];
 const adviceContent = document.getElementsByClassName("advice-content")[0];
+const randomBtn = document.getElementsByClassName("random-btn")[0];
 
 const getAdvice = () => {
   fetch("https://api.adviceslip.com/advice")
@@ -9,5 +10,9 @@ const getAdvice = () => {
       adviceContent.innerHTML = `"${data.slip.advice}"`;
     });
 };
+
+randomBtn.addEventListener("click", () => {
+  getAdvice();
+});
 
 getAdvice();

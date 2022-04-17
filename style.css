@@ -45,7 +45,7 @@ body {
   margin: 2ch 2ch 0 0;
 }
 
-.refresh-btn {
+.random-btn {
   position: relative;
   width: 60px;
   height: 60px;
@@ -53,6 +53,7 @@ body {
   border-style: none;
   margin-left: 45%;
   bottom: 28px;
+  cursor: pointer;
   background-color: var(--neon-green);
 }
 
