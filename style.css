@@ -1,6 +1,7 @@
 :root {
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
+  --lighter-neon-green: hsl(150, 100%, 72%);
   --grayish-blue: hsl(217, 19% 24%);
   --dark-grayish-blue: #323a49;
   --dark-blue: hsl(218, 23%, 16%);
@@ -55,6 +56,11 @@ body {
   bottom: 28px;
   cursor: pointer;
   background-color: var(--neon-green);
+}
+
+.random-btn:hover {
+  box-shadow: 0 0 40px var(--lighter-neon-green);
+  background-color: var(--lighter-neon-green);
 }
 
 .attribution {
