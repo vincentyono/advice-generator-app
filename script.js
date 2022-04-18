@@ -3,6 +3,12 @@ const adviceContent = document.getElementsByClassName("advice-content")[0];
 const randomBtn = document.getElementsByClassName("random-btn")[0];
 
 const getAdvice = () => {
+  adviceTitle.innerHTML = `Advice #`;
+  adviceContent.innerHTML = `<img
+  id="loading-spinner"
+  src="./images/loading-spinner.gif"
+  alt="loading spinner"
+/>`;
   fetch("https://api.adviceslip.com/advice")
     .then((res) => res.json())
     .then((data) => {
