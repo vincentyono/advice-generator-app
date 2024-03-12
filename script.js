@@ -14,6 +14,7 @@ const getAdvice = async () => {
 
   const response = await fetch("https://api.adviceslip.com/advice", {
     method: "GET",
+    cache: "no-store"
   });
 
   const advice = await response.json();
