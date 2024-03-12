@@ -12,7 +12,7 @@ const getAdvice = async () => {
   </div>`;
   spinner.style = "display: block;";
 
-  const response = await fetch("https:/api.adviceslip.com/advice", {
+  const response = await fetch("https://api.adviceslip.com/advice", {
     method: "GET",
   });
 
